@@ -1,9 +1,9 @@
 output "private_ip" {
-	value = "172.31.25.68"
+	value = aws_instance.netology.private_ip
 }
 
-outout "network_id" {
-	value = "subnet-386be740"
+output "network_id" {
+	value = aws_instance.netology.subnet_id
 }
 
 output "aws_acc_id" {
